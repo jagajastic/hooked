@@ -64,7 +64,7 @@ const Login = () => {
             <label htmlFor="email">
               Email Address
               <input
-                type="email"
+                type="text"
                 name="email"
                 id="email"
                 value={data.email}
@@ -76,18 +76,18 @@ const Login = () => {
               Password
               <input
                 type="password"
-                name="password"
-                id="password"
                 value={data.password}
                 onChange={handleInputChange}
+                name="password"
+                id="password"
               />
               {data.errorMessage && (
                 <span className="form-error">{data.errorMessage}</span>
               )}
-              <button disabled={data.isSubmitting}>
-                {data.isSubmitting ? "Loading..." : "Login"}
-              </button>
             </lable>
+            <button disabled={data.isSubmitting}>
+              {data.isSubmitting ? "Loading..." : "Login"}
+            </button>
           </form>
         </div>
       </div>
