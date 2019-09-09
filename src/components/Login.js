@@ -72,7 +72,7 @@ const Login = () => {
               />
             </label>
 
-            <lable htmlFor="password">
+            <label htmlFor="password">
               Password
               <input
                 type="password"
@@ -84,7 +84,7 @@ const Login = () => {
               {data.errorMessage && (
                 <span className="form-error">{data.errorMessage}</span>
               )}
-            </lable>
+            </label>
             <button disabled={data.isSubmitting}>
               {data.isSubmitting ? "Loading..." : "Login"}
             </button>
